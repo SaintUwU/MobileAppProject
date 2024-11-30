@@ -21,6 +21,11 @@
         <activity
             android:name=".BaseActivity"
             android:exported="false" />
+
+        <activity android:name=".ETelephone"
+            android:exported="false"/>
+
+
         <activity
             android:name=".GetStartedActivity"
             android:exported="true">
