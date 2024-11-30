@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">MobileAppProject</string>
-    <string name="web_client_id">701284449916-bpnrs0p088ist4n1pifk4jbuhpbpig3j.apps.googleusercontent.com</string>
+    <string name="default_web_client_id">252100259277-05mbaepqa57ulj39hlfh0acu9cucc9hn.apps.googleusercontent.com</string>
 
     <string name="get_started_text">Feel Safer\n With\n HerShield!</string>
     <string name="forgot_password_msg">Don\'t worry! it happens. Please enter the email address associated with your account.</string>
