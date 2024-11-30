@@ -57,11 +57,6 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.activity)
 
-    val credentialsManagerVersion = "1.5.0-alpha05"
-    implementation("androidx.credentials:credentials:$credentialsManagerVersion")
-    implementation("androidx.credentials:credentials-play-services-auth:$credentialsManagerVersion")
-    implementation("com.google.android.libraries.identity.googleid:googleid:1.1.1")
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
