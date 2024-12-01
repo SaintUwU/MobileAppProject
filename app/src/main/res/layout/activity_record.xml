@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Card 1 -->
+    <!-- Card 1 -->
+    <FrameLayout
+        android:id="@+id/cardContainer1"
+        android:layout_width="381dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:clipToPadding="false"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/cardImage1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/cardOverlay1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Back Arrow Icon -->
+        <ImageView
+            android:id="@+id/backArrowIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|start"
+            android:layout_margin="18dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/back"
+            android:contentDescription="Back" />
+
+        <!-- Card 1 Text -->
+        <TextView
+            android:id="@+id/cardText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom|left"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:text="Record Incident"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+    </FrameLayout>
+
+
+    <!-- Card 2 -->
+    <FrameLayout
+        android:id="@+id/cardContainer2"
+        android:layout_width="341dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cardContainer1"
+        android:layout_marginTop="35dp"
+        android:clipToPadding="false"
+        android:layout_alignParentTop="false"
+        android:background="@drawable/card_border">
+
+        <ImageView
+            android:id="@+id/cardImage2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/cardOverlay2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Card 2 Text -->
+        <LinearLayout
+            android:id="@+id/cardTextContainer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp"
+            android:layout_gravity="center|top">
+
+            <!-- Grey Text -->
+            <TextView
+                android:id="@+id/cardTextTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="video"
+                android:textSize="16sp"
+                android:textColor="#808080"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Black Text -->
+            <TextView
+                android:id="@+id/cardTextDescription2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Record the events experienced with a camera."
+                android:textSize="17sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Record Icon for Card 2 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="12dp"
+            >
+
+            <ImageView
+                android:id="@+id/recordIcon2"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_record1" />
+
+            <TextView
+                android:id="@+id/recordText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Card 3 -->
+    <FrameLayout
+        android:id="@+id/cardContainer3"
+        android:layout_width="341dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cardContainer2"
+        android:layout_marginTop="35dp"
+        android:clipToPadding="false"
+        android:layout_alignParentTop="false"
+        android:background="@drawable/card_border">
+
+        <ImageView
+            android:id="@+id/cardImage3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/cardOverlay3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Card 3 Text -->
+        <LinearLayout
+            android:id="@+id/cardTextContainer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp"
+            android:layout_gravity="center|top">
+
+            <!-- Grey Text -->
+            <TextView
+                android:id="@+id/cardTextTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sound"
+                android:textSize="16sp"
+                android:textColor="#808080"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Black Text -->
+            <TextView
+                android:id="@+id/cardTextDescription3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Record the events experienced with a microphone."
+                android:textSize="17sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Record Icon for Card 3 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="12dp">
+
+            <ImageView
+                android:id="@+id/recordIcon3"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_record2" />
+
+            <TextView
+                android:id="@+id/recordText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

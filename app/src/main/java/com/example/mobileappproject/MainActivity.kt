@@ -176,13 +176,14 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
 
-                    // Report Incident Button
+                    // Record Incident Button
                     Card(
                         modifier = Modifier
                             .weight(1f)
                             .padding(end = 4.dp)
                             .height(95.dp)
-                            .clickable { /* TODO */ },
+                            .clickable {  val intent = Intent(context, RecordActivity::class.java)
+                                context.startActivity(intent) },
                         shape = MaterialTheme.shapes.medium,
                         colors = CardDefaults.cardColors(
                             containerColor = MaterialTheme.colorScheme.surface
@@ -193,13 +194,13 @@ class MainActivity : AppCompatActivity() {
                             // Background image
                             Image(
                                 painter = painterResource(id = R.drawable.reports),
-                                contentDescription = "Report Incident",
+                                contentDescription = "Record Incident",
                                 modifier = Modifier.fillMaxSize(),
                                 contentScale = ContentScale.Crop
                             )
                             // Text positioned at the bottom-left
                             Text(
-                                text = "Report Incident",
+                                text = "Record Incident",
                                 style = MaterialTheme.typography.bodyMedium.copy(
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 16.sp // Increase font size for better visibility
